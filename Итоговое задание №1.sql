@@ -42,4 +42,4 @@ FROM
   JOIN first_name fn ON ln2.id=fn.id
   JOIN middle_name mn ON ln2.id=mn.id
 ORDER BY
-  "Ф.И.О" desc;
+  "Ф.И.О." desc;
