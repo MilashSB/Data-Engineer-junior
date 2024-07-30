@@ -4,10 +4,10 @@ def sales_over_time(sales_data):
     :param sales_data: Список продаж
     :return: Словарь
     """
-    sales_days = {}  # Словарь с результатами
-    for sale in sales_data:  # Построчный проход по списку продаж
-        if sale.get('date') in sales_days.keys():  # Проверка на присутсвие значания в списке ключей словаря
+    sales_days = {}
+    for sale in sales_data:
+        if sale.get('date') in sales_days.keys():
             sales_days[sale.get('date')] += sale.get('quantity') * sale.get('price')
         else:
             sales_days[sale.get('date')] = sale.get('quantity') * sale.get('price')
-    return sales_days  # Возвращение словаря
+    return sales_days

@@ -5,10 +5,10 @@ def total_sales_per_product(sales_data):
     :param sales_data: Список продаж
     :return: Словарь
     """
-    sales_products = {}  # Словарь с результатами
-    for sale in sales_data:  # Построчный проход по списку продаж
-        if sale.get('product_name') in sales_products.keys():  # Проверка на присутсвие значания в списке ключей словаря
+    sales_products = {}
+    for sale in sales_data:
+        if sale.get('product_name') in sales_products.keys():
             sales_products[sale.get('product_name')] += sale.get('quantity') * sale.get('price')
         else:
             sales_products[sale.get('product_name')] = sale.get('quantity') * sale.get('price')
-    return sales_products  # Возвращение словаря
+    return sales_products
