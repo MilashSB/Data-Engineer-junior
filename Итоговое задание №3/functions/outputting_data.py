@@ -7,7 +7,7 @@ try:
         Глваная функция, которая осуществляет вывод на экран двух значений и построение двух графиков
         :return: Два значения и два графика
         """
-        from .data_reading import read_sales_data
+        from .reading_data import read_sales_data
         from .sales_by_product import total_sales_per_product
         from .sales_by_day import sales_over_time
 

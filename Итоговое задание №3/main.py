@@ -1,5 +1,5 @@
 try:
-    from functions.data_output import main
+    from functions.outputting_data import main
 
     if __name__ == '__main__':
         main()
